@@ -1,4 +1,4 @@
-function heeHaw(){
+function heeHaw(event){
     let heeHawNums = document.getElementById("numbers");
     let number = document.getElementById("number");
     heeHawNums.innerText = "";
@@ -22,6 +22,7 @@ function heeHaw(){
             heeHawNums.appendChild(paragraph);
         }
     }
+    event.preventDefault();
 }
 let btn = document.getElementById("click");
 btn.onclick = heeHaw;
